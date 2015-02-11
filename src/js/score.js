@@ -9,18 +9,21 @@
 
     create: function () {
       this.points = window['shoot'].score;
+      this.addScoreText();
+    },
+
+    addScoreText: function () {
       this.scoreText = this.add.text(
-          this.game.width / 2,
-          this.game.height / 2,
-          " Partie terminé \n Votre score : " + this.points + " points \n Cliquer ici pour recommencer ",
-          {font: "24px Arial", fill: '#123456', align: 'center' } // style du texte
-        );
+        this.game.width / 2,
+        this.game.height / 2,
+        " Partie terminé \n Votre score : " + this.points + " points \n Cliquer ici pour recommencer ",
+        {font: "36px Arial", fill: '#ffffff', align: 'center' } // style du texte
+      );
+      this.scoreText.setShadow(2, 2, 'rgba(25,25,25,0.5)', 0);
       this.scoreText.anchor.setTo(0.5, 0.5); // permet de centrer l'élément
       this.scoreText.inputEnabled = true; // autorise evenements
       this.scoreText.events.onInputDown.add(this.onDown, this);// ajout d'un evenement onmousedown pour demarrer le jeu
     },
-
-    update: function () {},
 
     onDown: function () {
       this.game.state.start('game');//demarrage du jeu
