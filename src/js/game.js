@@ -14,14 +14,7 @@
       this.targets = [];// on initialise de le tableau qui vont repertorier les objets à shooter
       this.nb = 0;
       this.points = 0;
-      this.scoreText = this.add.text(
-        this.game.width - 150,
-        20,
-        "",
-        {font: "16px Arial", fill: '#FF00FF', align: 'right' } // style du texte
-      );
-      this.renderPoint(); // on montre les points
-      this.scoreText.anchor.setTo(0.5, 0.5); // permet de centrer l'élément
+      this.addScoreText();
       this.game.physics.startSystem(Phaser.Physics.ARCADE);
       this.game.physics.arcade.gravity.y = -300;// global gravity
     },
@@ -71,6 +64,18 @@
       window['shoot'].score = this.points;
       this.game.state.start('score');//on envoie a l'étape suivante : l'affichage du score
     },
+
+    addScoreText: function () {
+      this.scoreText = this.add.text(
+        35,
+        25,
+        "",
+        {font: "16px Arial", fill: '#123456', align: 'left' } // style du texte
+      );
+      this.renderPoint(); // on montre les points
+      this.scoreText.anchor.setTo(0.5, 0.5); // permet de centrer l'élément
+    },
+
     renderPoint: function () {
       this.scoreText.text = this.points + " point" + ((this.points>1) ? "s" : "");
     }

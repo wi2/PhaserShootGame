@@ -17,9 +17,8 @@
         this.game.width / 2,
         this.game.height / 2,
         " Partie terminé \n Votre score : " + this.points + " points \n Cliquer ici pour recommencer ",
-        {font: "36px Arial", fill: '#ffffff', align: 'center' } // style du texte
+        {font: "36px Arial", fill: '#123456', align: 'center' } // style du texte
       );
-      this.scoreText.setShadow(2, 2, 'rgba(25,25,25,0.5)', 0);
       this.scoreText.anchor.setTo(0.5, 0.5); // permet de centrer l'élément
       this.scoreText.inputEnabled = true; // autorise evenements
       this.scoreText.events.onInputDown.add(this.onDown, this);// ajout d'un evenement onmousedown pour demarrer le jeu
