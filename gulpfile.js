@@ -72,7 +72,7 @@ gulp.task('minifyhtml', ['clean'], function() {
 gulp.task('lint', function() {
   gulp.src(paths.js)
     .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter('default'))
+    //.pipe(jshint.reporter('default'))
     .on('error', gutil.log);
 });
 
