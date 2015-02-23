@@ -56,20 +56,20 @@ Le but du jeu étant d'amasser un maximum de points en cliquant sur les ballons 
 ### Comment allons nous procéder pour notre jeu ?
 Nous allons décomposer notre jeu en différentes étapes :
 >
- **Boot**, qui va initialiser quelques paramètres globaux de l'application
- **Preloader**, qui va charger tous les éléments visuels et afficher un petit loading
- **Menu**, qui va afficher un bouton start afin de démarrer le jeu
- **Game**, l'étape qui va représenter notre jeu de shoot
- **Score**, pour afficher le score et pouvoir recommencer à jouer
+ - **Boot**, qui va initialiser quelques paramètres globaux de l'application
+ - **Preloader**, qui va charger tous les éléments visuels et afficher un petit loading
+ - **Menu**, qui va afficher un bouton start afin de démarrer le jeu
+ - **Game**, l'étape qui va représenter notre jeu de shoot
+ - **Score**, pour afficher le score et pouvoir recommencer à jouer
 
 Pour chaque étape, voici les principales méthodes qui sont appelées, par la librairie, dans cette ordre :
 
 >
-**init** : Première méthode appelée à l'initialisation de l'étape (que nous n'utiliserons pas)
-**preload** : comme son nom l'indique permet de pré-charger les éléments
-**create** : cette étape est la mise en place du jeu, la création des éléments
-**update** : c'est à cette étape que commence le jeu et son déroulement.
-**shutdown** : dernière méthode appelée lorsque l'on quitte l'étape (que nous n'utiliserons pas)
+ - **init** : Première méthode appelée à l'initialisation de l'étape (que nous n'utiliserons pas)
+ - **preload** : comme son nom l'indique permet de pré-charger les éléments
+ - **create** : cette étape est la mise en place du jeu, la création des éléments
+ - **update** : c'est à cette étape que commence le jeu et son déroulement.
+ - **shutdown** : dernière méthode appelée lorsque l'on quitte l'étape (que nous n'utiliserons pas)
 
 
 ----------
