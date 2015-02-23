@@ -145,9 +145,10 @@ gulp.task('lint', function() {
 
 Tout d'abord nous allons **nettoyer les sources générées et supprimer ce dont nous n'aurons pas besoin**.. et finalement **rajouter les fichiers manquants**.
 
+>
 > **Inventaire des besoins : **
- - une image (que nous appellerons un sprite) : qui sera l'élément à shooter (ballon.png).
- - Ajouter le fichier score.js pour notre 5e étape et l'ajouter dans les fichiers index.html et main.js
+> - une image (que nous appellerons un sprite) : qui sera l'élément à shooter (ballon.png).
+> - Ajouter le fichier score.js pour notre 5e étape et l'ajouter dans les fichiers index.html et main.js
 
 ----------
 
@@ -585,8 +586,8 @@ Affichage du score à la fin de la partie.
 ### Notre modeste jeu est finalement terminé.
 
 >
-**pour un prochain tuto : **
- - ajouter différents sprite (ballon d'autre couleur)
- - ajouter une animation lors du shoot de celui-ci
- - Ajouter d'un son lorsque l'on shoot un ballon
- - ajouter un fond plus sympa
+> **pour un prochain tuto : **
+> - ajouter différents sprite (ballon d'autre couleur)
+> - ajouter une animation lors du shoot de celui-ci
+> - Ajouter d'un son lorsque l'on shoot un ballon
+> - ajouter un fond plus sympa
